@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Гончарова В.В., ІО-43, ЛР2, варіант 5</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Cтилі таблиці */
+    .variant-table {
+      border-collapse: collapse;
+      width: 600px;
+      color: #102020; 
+    }
+    .variant-table td {
+      border: 2px solid #555;
+      padding: 8px 10px;
+      text-align: center;
+    }
+    .variant-table tfoot td { height: 12px; padding: 2px; }
+
+    .row-1 td { background-color: #558f8f; }
+    .row-2 td { background-color: #f5f555; }
+
+    /* при наведенні кольори міняються на протилежні */
+    .row-1:hover td { background-color: #f5f555; }
+    .row-2:hover td { background-color: #558f8f; }
+  </style>
+</head>
+<body>
+
+  <h2>Завдання 1. Таблиця (варіант 5)</h2>
+
+  <table class="variant-table">
+
+    <tbody class="row-1">
+      <tr>
+        <td>Гончарова</td>
+        <td colspan="2">Валерія</td>
+        <td>Вікторівна</td>
+      </tr>
+    </tbody>
+
+    <tbody class="row-2">
+      <tr>
+        <td rowspan="2">ІО-43</td>
+        <td rowspan="2">ЛР2</td>
+        <td>Варіант 5</td>
+        <td rowspan="2">Таблиці в HTML-5. Трансформації в CSS-3</td>
+      </tr>
+      <tr>
+        <td>5</td>
+      </tr>
+    </tbody>
+
+    <!-- останній рядок за макетом -->
+    <tfoot>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tfoot>
+  </table>
+
+<h2>Завдання 2. Створення зображення</h2>
+    
+    <div class="exercise-section">
+        <h3>1. За допомогою position</h3>
+        <div class="venn-wrapper pos-version">
+            <div class="circle circle-red"></div>
+            <div class="circle circle-blue"></div>
+            <div class="circle circle-green"></div>
+        </div>
+    </div>
+
+    <div class="exercise-section">
+        <h3>2. За допомогою transform</h3>
+        <div class="venn-wrapper transform-version">
+            <div class="circle circle-red"></div>
+            <div class="circle circle-blue"></div>
+            <div class="circle circle-green"></div>
+        </div>
+    </div>
+
+</body>
+</html>

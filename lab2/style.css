@@ -1,0 +1,82 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px;
+}
+/* Властивості CSS для Завдання 2 */
+
+.exercise-section {
+    margin-bottom: 40px;
+}
+
+/* Загальний контейнер для кола */
+.venn-wrapper {
+    position: relative;
+    width: 260px;
+    height: 240px;
+    margin: 20px auto;
+}
+
+/* Базові стилі для трьох кіл */
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #1a1a1a;
+    opacity: 0.65; /* Напівпрозорість для ефекту перекриття кольорів */
+    mix-blend-mode: multiply; /* Накладання кольорів у зонах перетину */
+}
+
+.circle-red {
+    background-color: #ff4d4d;
+}
+
+.circle-blue {
+    background-color: #4da6ff;
+}
+
+.circle-green {
+    background-color: #4dff88;
+}
+
+/* 1. Реалізація за допомогою absolute positioning */
+.pos-version .circle {
+    position: absolute;
+}
+
+.pos-version .circle-red {
+    top: 0;
+    left: 65px;
+}
+
+.pos-version .circle-blue {
+    top: 90px;
+    left: 0;
+}
+
+.pos-version .circle-green {
+    top: 90px;
+    left: 130px;
+}
+
+/* 2. Реалізація за допомогою transform (translate) */
+.transform-version {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transform-version .circle {
+    position: absolute;
+}
+
+.transform-version .circle-red {
+    transform: translateY(-45px);
+}
+
+.transform-version .circle-blue {
+    transform: translate(-65px, 45px);
+}
+
+.transform-version .circle-green {
+    transform: translate(65px, 45px);
+}

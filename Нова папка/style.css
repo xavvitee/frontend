@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h2, h3, h4 {
+    text-align: center;
+}
+.task-section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.variant-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: center;
+}
+.variant-table td {
+    padding: 15px;
+    border: 2px solid #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 50px;
+}
+.row-1 {
+    background-color: #048f8f;
+    color: #ffffff;
+}
+.row-2 {
+    background-color: #f5f504;
+    color: #111111;
+}
+.row-3 {
+    background-color: #ffffff;
+    color: #333333;
+}
+.row-1:hover {
+    background-color: #f5f504;
+    color: #111111;
+}
+.row-2:hover {
+    background-color: #048f8f;
+    color: #ffffff;
+}
+
+.figures-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.figure-card {
+    text-align: center;
+}
+.canvas {
+    width: 250px;
+    height: 250px;
+    border: 2px dashed #bbb;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-outer {
+    width: 120px;
+    height: 120px;
+    border: 25px solid #000;
+    border-radius: 50%;
+}
+.circle-inner {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.line-h {
+    width: 200px;
+    height: 10px;
+    background-color: #000;
+}
+.line-v {
+    width: 10px;
+    height: 200px;
+    background-color: #000;
+}
+
+.target-position {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.target-position > div {
+    position: absolute;
+}
+.target-position .circle-outer {
+    top: 15px;
+    left: 15px;
+}
+.target-position .circle-inner {
+    top: 75px;
+    left: 75px;
+}
+.target-position .line-h {
+    top: 95px;
+    left: 0;
+}
+.target-position .line-v {
+    top: 0;
+    left: 95px;
+}
+
+.target-transform {
+    width: 0; 
+    height: 0;
+}
+.target-transform > div {
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.target-transform .circle-outer {
+    transform: translate(15px, 15px);
+}
+.target-transform .circle-inner {
+    transform: translate(75px, 75px);
+}
+.target-transform .line-h {
+    transform: translate(0px, 95px);
+}
+.target-transform .line-v {
+    transform: translate(95px, 0px);
+}
