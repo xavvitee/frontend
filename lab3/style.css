@@ -1,0 +1,98 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body { 
+  background: #fff; 
+  font-family: Arial, Helvetica, sans-serif; 
+  padding-bottom: 40px;
+}
+h2 { width: 80%; 
+  margin: 30px auto 10px; 
+  font-size: 20px; 
+  color: #333; 
+}
+
+/* спільні стилі блоків */
+.block { 
+  font-weight: bold; 
+  font-size: 24px; 
+  color: #333; 
+  letter-spacing: 1px; 
+  text-align: center; 
+}
+
+/* Завдання 1: float*/
+.float-wrapper { 
+  width: 50%; 
+  margin: 0 auto; 
+}
+.float-wrapper::after { 
+  content: ""; 
+  display: block; 
+  clear: both; 
+}  
+
+.float-header  { 
+  float: left; 
+  width: 100%; 
+  height: 100px; 
+  background: #6fa5de; 
+  line-height: 100px; 
+}
+.float-content { 
+  float: left; 
+  width: 75%;  
+  height: 350px; 
+  background: #bce48a; 
+  line-height: 350px; 
+}
+.float-side    { 
+  float: left; 
+  width: 25%;  
+  height: 350px; 
+  background: #92ad6e; 
+  line-height: 350px; 
+}
+.float-footer  { 
+  float: left; 
+  width: 100%; 
+  height: 90px; 
+  background: #42f4c4; 
+  line-height: 90px; 
+}
+
+/*Завдання 2: flex*/
+.flex-wrapper { 
+  width: 50%; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; }
+.flex-middle  { 
+  display: flex; 
+}
+.flex-header, .flex-content, .flex-side, .flex-footer {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.flex-header  { 
+  height: 100px; 
+  background: #6fa5de; 
+}
+.flex-content { 
+  flex: 3; 
+  height: 350px; 
+  background: #bce48a; 
+}  
+.flex-side { 
+  flex: 1; 
+  height: 350px; 
+  background: #92ad6e; 
+}  
+.flex-footer  { 
+  height: 90px;  
+  background: #42f4c4; 
+}
