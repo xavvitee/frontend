@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #0d0d0d;
+    line-height: 1.3;
+}
+
+/* Елементи, які змінюють колір при кліку (Завдання 1) */
+.color-alt-1 {
+    background-color: #eb097a;
+    color: #1a237e;
+}
+
+.color-alt-2 {
+    background-color: #1b5e20;
+    color: #ffffff;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+#gallery img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#buttons button {
+    padding: 6px 14px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+#target-first,
+.target-second {
+    transition: background-color 0.4s, color 0.4s;
+}
+
